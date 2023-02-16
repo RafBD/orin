@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --whiteTransparent: rgba(255, 255, 255, 0.086);
+    --black: #000;
+    --gray: rgb(37, 32, 32);
+    --lightGray: lightGray;
+    --green: #2ce36c;
+
+    --min-column-width: 270px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: rgb(37, 32, 32);
+    background: linear-gradient(0deg, rgb(42, 42, 42) 0%, rgba(31, 31, 31, 1) 60%, rgba(159, 0, 0, 0.8677902435388218) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    margin-top: -110px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+.fa-solid {
+    font-size: 1.2rem;
+    padding: 1px;
+}
+
+.fa-heart {
+    background: linear-gradient(137deg, rgba(101, 54, 152, 1) 30%, rgba(28, 183, 190, 1) 71%);
+    border-radius: .2rem;
+}
+
+/* ASIDE */
+.aside-column {
+    color: var(--white);
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--black);
+    height: 100vh;
+    font-weight: 200;
+}
+
+.aside-column div {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    margin: -110px 0 -125px 1.5rem;
+}
+
+.active {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.nav,
+.create-liked {
+    gap: 1rem;
+}
+
+.nav a,
+.create-liked a {
+    color: var(--lightGray);
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.list-playlists {
+    margin-top: -63px;
+}
+
+.list-playlists li {
+    margin-bottom: 1rem;
+}
+
+/* MAIN */
+.main {
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.arrows {
+    margin-top: -133px;
+}
+
+.arrow-right {
+    margin-left: 1rem;
+}
+
+.arrows a i {
+    color: var(--lightGray);
+}
+
+.arrow {
+    background-color: var(--gray);
+    border-radius: 50%;
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-time {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.playlist-container {
+    flex: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.playlist {
+    background-color: var(--whiteTransparent);
+    display: inline-flex;
+    height: 80px;
+    width: 32.5%;
+    align-items: center;
+    border-radius: .4rem;
+    transition: all .5s;
+    justify-content: space-between;
+}
+
+.playlist:hover>.button-playList {
+    visibility: visible;
+}
+
+.playlist:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.194);
+}
+
+.playlist-cover {
+    height: 100%;
+}
+
+.playlist-name {
+    color: var(--white);
+    font-size: 18px;
+    max-height: 80%;
+    max-width: 42%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.button-playList {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 13px 14px -2px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 13px 14px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 13px 14px -2px rgba(0, 0, 0, 1);
+    visibility: hidden;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer-container {
+    border: solid red 1px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
+    background-color: var(--gray);
+}
+
+.cover-div img {
+    height: 60%;
+}
+
+.cover-div {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.titleArtist-container {
+    flex-direction: column;
+}
+
+.titleArtist-container .title {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.titleArtist-container .artist {
+    font-size: 12px;
+    color: var(--lightGray);
+    font-weight: 200;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    gap: 2rem;
+}
+
+
+@media screen and (max-width: 1357px) {
+    .footer-container {
+        top: 32.9rem;
+    }
+}
