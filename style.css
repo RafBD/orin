@@ -242,10 +242,49 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
-    gap: 2rem;
+    height: 100%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    margin-top: -1rem;
 }
 
+.controls i {
+    color: var(--lightGray);
+    transition: all .3s ease-in;
+}
+
+.controls .gray-controls:hover {
+    color: var(--white);
+}
+
+.controls .fa-play {
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-play:hover {
+    width: 41px;
+    height: 41px;
+}
+
+.progress-container {
+    position: absolute;
+    top: 3.5rem;
+    left: 26rem;
+    width: 26.5rem;
+    color: var(--lightGray);
+}
+
+.tools-container {
+    display: flex;
+    align-items: center;
+}
 
 @media screen and (max-width: 1357px) {
     .footer-container {
