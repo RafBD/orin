@@ -13,10 +13,10 @@
     <main class="main">
 
         <div class="arrows">
-            <a href="#" class="arrow arrow-left">
+            <a href="#" class="arrow arrow-left" title="Go back">
                 <i class="fa-solid fa-chevron-left"></i>
             </a>
-            <a href="#" class="arrow arrow-right">
+            <a href="#" class="arrow arrow-right" title="Go forward">
                 <i class="fa-solid fa-chevron-right"></i>
             </a>
         </div>
@@ -47,21 +47,21 @@
                 </button>
             </div>
             <div class="playlist">
-                <img src="img/Covers.png" alt="Covers" class="playlist-cover">
+                <img src="img/Cover2" alt="Covers" class="playlist-cover">
                 <p class="playlist-name">Playlist Name</p>
                 <button class="button-playList">
                     <i class="fa-solid fa-play"></i>
                 </button>
             </div>
             <div class="playlist">
-                <img src="img/Covers.png" alt="Covers" class="playlist-cover">
+                <img src="img/Cover2" alt="Covers" class="playlist-cover">
                 <p class="playlist-name">Playlist Name</p>
                 <button class="button-playList">
                     <i class="fa-solid fa-play"></i>
                 </button>
             </div>
             <div class="playlist">
-                <img src="img/Covers.png" alt="Covers" class="playlist-cover">
+                <img src="img/Cover2" alt="Covers" class="playlist-cover">
                 <p class="playlist-name">Playlist Name</p>
                 <button class="button-playList">
                     <i class="fa-solid fa-play"></i>
@@ -80,26 +80,27 @@
             </div>
             <i class="fa-solid fa-heart"></i>
         </div>
-        <div class="controls">
-            <i class="fa-solid fa-shuffle gray-controls"></i>
-            <i class="fa-solid fa-backward-step gray-controls"></i>
-            <i class="fa-solid fa-play"></i>
-            <i class="fa-solid fa-forward-step gray-controls"></i>
-            <i class="fa-solid fa-repeat gray-controls"></i>
+        <div class="controls-container">
+            <div class="controls-icons">
+            <i class="fa-solid fa-shuffle gray-controls" title="Enable shuffle"></i>
+            <i class="fa-solid fa-backward-step gray-controls" title="Previous"></i>
+            <i class="fa-solid fa-play" title="Play"></i>
+            <i class="fa-solid fa-forward-step gray-controls" title="Next"></i>
+            <i class="fa-solid fa-repeat gray-controls" title="Enable repeat"></i>
+        </div>
+           
+        <input type="range" name="" id="" class="progress-bar" min="0" max="100" value="30" step="1">
         </div>
 
-        <div class="progress-container">
-            <div class="progress-bar"></div>
-            <input type="range" name="" id="">
-        </div>
+   
         
         <div class="tools-container">
-            <i class="fa-solid fa-microphone"></i>
-            <i class="fa-solid fa-table-list"></i>
-            <i class="fa-solid fa-computer"></i>
-            <i class="fa-solid fa-volume-low"></i>
+            <i class="fa-solid fa-microphone" title="Lyrics"></i>
+            <i class="fa-solid fa-table-list" title="Queue"></i>
+            <i class="fa-solid fa-computer" title="Connect to a device"></i>
+            <i class="fa-solid fa-volume-low" title="Mute"></i>
             <input type="range" name="" id="">
-            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            <i class="fa-solid fa-up-right-and-down-left-from-center" title="Full screen"></i>
         </div>
 
     </footer>
@@ -147,7 +148,7 @@
     </aside>
     
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
     <script src="https://kit.fontawesome.com/ad591cd29c.js" crossorigin="anonymous"></script>
 </body>
 </html>
