@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orin - Search</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ASIDE -->
+    <aside class="aside-column">
+        <div class="nav">
+            <a href="#" class="three-points">
+                <i class="fa-solid fa-ellipsis"></i>
+            </a>
+            <a href="index.html" class="house active">
+                <i class="fa-solid fa-house-chimney"></i>
+                Home
+            </a>
+            <a href="#" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </a>
+            <a href="#" class="library">
+                <i class="fa-solid fa-book-open"></i>
+                Your Library
+            </a>
+        </div>
+
+        <div class="create-liked">
+            <a href="#" class="create">
+                <i class="fa-solid fa-square-plus"></i>
+                Create Playlist
+            </a>
+            <a href="#" class="liked-songs">
+                <i class="fa-solid fa-heart"></i>
+                Liked Songs
+            </a>
+        </div>
+        <hr>
+        <div class="list-playlists">
+            <ul>
+                <li>Playlist 1</li>
+                <li>Playlist 2</li>
+                <li>Playlist 3</li>
+                <li>Playlist 4</li>
+                <li>Playlist 5</li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="search-container">
+            <a href="#" class="arrow arrow-left" title="Go back">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <a href="#" class="arrow arrow-right" title="Go forward">
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            
+            <div class="input-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" name="" id="search-input" placeholder="Search for your favorite artist, album or track">
+            </div>
+        </div>
+    </section>
+
+    <section id="search-results"></section>
+
+    <!-- Footer Controls and more -->
+    <footer class="footer-container">
+        <div class="cover-div">
+            <img src="img/dc.jfif" alt="">
+            <div class="titleArtist-container">
+                <p class="title">Dance Crip</p>
+                <p class="artist">Trueno</p>
+            </div>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="controls-container">
+            <div class="controls-icons">
+            <i class="fa-solid fa-shuffle gray-controls" title="Enable shuffle"></i>
+            <i class="fa-solid fa-backward-step gray-controls" title="Previous"></i>
+            <i class="fa-solid fa-play" title="Play"></i>
+            <i class="fa-solid fa-forward-step gray-controls" title="Next"></i>
+            <i class="fa-solid fa-repeat gray-controls" title="Enable repeat"></i>
+        </div>
+           
+        <input type="range" name="" id="" class="progress-bar" min="0" max="100" value="30" step="1">
+        </div>
+
+        <div class="tools-container">
+            <i class="fa-solid fa-microphone" title="Lyrics"></i>
+            <i class="fa-solid fa-table-list" title="Queue"></i>
+            <i class="fa-solid fa-computer" title="Connect to a device"></i>
+            <i class="fa-solid fa-volume-low" title="Mute"></i>
+            <input type="range" name="" id="">
+            <i class="fa-solid fa-up-right-and-down-left-from-center" title="Full screen"></i>
+        </div>
+    </footer>
+
+    <script src="search.js"></script>
+    <script src="https://kit.fontawesome.com/ad591cd29c.js" crossorigin="anonymous"></script>
+</body>
+</html>
