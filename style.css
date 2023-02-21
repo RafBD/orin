@@ -6,6 +6,7 @@
     --whiteTransparent: rgba(255, 255, 255, 0.086);
     --black: #000;
     --gray: rgb(37, 32, 32);
+    --darkBrown: #160405;
     --lightGray: rgb(143, 143, 143);
     --green: #2ce36c;
 
@@ -138,7 +139,8 @@ li {
 }
 
 .arrow {
-    background-color: var(--gray);
+    /* background-color: var(--gray); */
+    background-color: var(--darkBrown);
     border-radius: 50%;
     display: inline-flex;
     width: 2rem;
